@@ -99,7 +99,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); }
   padding: 12px; color: var(--muted);
   font-family: var(--mono); font-size: 12px; line-height: 1.4; letter-spacing: 0.04em;
 }
-.ch-portrait { width: 144px; max-width: 100%; aspect-ratio: 1; }
+.ch-portrait { width: 144px; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; display: block; }
 
 /* Sections */
 .ch-sec {
@@ -156,7 +156,8 @@ body { margin: 0; background: var(--paper); color: var(--ink); }
   </header>
 
   <section class="ch-intro" aria-labelledby="ch-name">
-    <div class="ch-ph ch-portrait" role="img" aria-label="Portrait placeholder">Portrait<br>placeholder</div>
+    <img class="ch-portrait" src="portrait.jpg" width="144" height="144" alt="Connor Herring">
+
     <div>
       <h1 id="ch-name">Connor Herring</h1>
       <p class="ch-lead">Independent data and analytics consultant. I help private-capital firms build the data platform, the pipelines and the small internal apps their teams use every day.</p>
